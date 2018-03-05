@@ -1,0 +1,100 @@
+titulo: Curso de Finanzas Básicas para Gerentes y Empresarios
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/curso--finanzas-basicas-para-gerentes-y-empresarios-cursos-40227.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Diplomado en Gestión de Riesgos en el Sector Financiero en el marco de Basilea II y Basilea III
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/curso-diplomado-en-gestion-de-riesgos-en-el-sector-financiero-cursos-29317.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
+titulo: Programa Ejecutivo en Control de Gestión, Estrategia e Innovación. Controllers
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/2633.jpg
+link info: http://www.curso-en-colombia.com.co/programa-ejecutivo-en-control-de-gestion-estrategia-e-innovacion-controllers-educacion-ejecutiva-36406.html
+centro: Wolters Kluwer Formación
+
+titulo: Curso de Certificación ITIL® Foundation
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/2733.jpg
+link info: http://www.curso-en-colombia.com.co/curso-de-certificacion-itil-c2-ae-foundation-cursos-42010.html
+centro: Fundación General de la Universidad de Salamanca
+
+titulo: Diplomado en Gestión de Proyectos y Obras de Construcción
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/1751.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-de-gestion-de-proyectos-y-obras-de-construccion-posgrados-40576.html
+centro: Pontificia Universidad Javeriana - Educación Continuada
+
+titulo: Curso Herramientas para el Análisis Computacional de Datos. Data Science
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/curso-de-herramientas-para-el-analisis-computacional-de-datos-conceptos-basicos-sobre-data-science-cursos-42857.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Diplomado en Dirección Estratégica de Ventas
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/diplomado-en-direccion-estrategica-de-ventas-cursos-42749.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
+titulo: Curso de Especialización en Dirección y Gestión Aplicada de Proyectos + MS Project 2013 + PMP®
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/2733.jpg
+link info: http://www.curso-en-colombia.com.co/curso-de-especializacion-en-direccion-y-gestion-de-proyectos--preparacion-de-la-certificacion-pmp-pmi-cursos-36408.html
+centro: Fundación General de la Universidad de Salamanca
+
+titulo: Diplomado en Fotografía de Moda
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/1751.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-en-fotografia-de-moda-cursos-41663.html
+centro: Pontificia Universidad Javeriana - Educación Continuada
+
+titulo: Diplomado en Gerencia de Proyectos
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-en-gerencia-de-proyectos-cursos-40061.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Diplomado - Certificación en Administración de la Construcción CEAC
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/diplomado--certificacion-en-administracion-de-la-construccion-ceac-cursos-42815.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
+titulo: Diplomado en Habilidades de Liderazgo y Dirección
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/1751.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-en-direccion-y-habilidades-de-liderazgo-cursos-40587.html
+centro: Pontificia Universidad Javeriana - Educación Continuada
+
+titulo: Diplomado de Aplicaciones Logísticas en Excel
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-aplicaciones-logisticas-en-excel-cursos-41716.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Curso - Seminario Estrategia Six Sigma - Sede Colombia
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/curso--seminario-estrategia-six-sigma-cursos-28197.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
+titulo: Curso de Escritura Creativa: Como Escribir Una Novela Breve 
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/1751.jpg
+link info: http://www.curso-en-colombia.com.co/curso-de-escritura-creativa-como-escribir-una-novela-breve-cursos-41752.html
+centro: Pontificia Universidad Javeriana - Educación Continuada
+
+titulo: Curso de Gerencia de Riesgos en Proyectos
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/curso-de-gerencia-de-riesgos-en-proyectos-cursos-19722.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Diplomado en Gestión Estratégica del Capital Humano
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/diplomado-en-gestion-estrategica-de-capital-humano-cursos-36041.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
+titulo: Diplomado en Régimen Tributario Colombiano: Teoría y Práctica
+imagen: http://static4.curso-en-colombia.com.co/ext/logos/1751.jpg
+link info: http://www.curso-en-colombia.com.co/diplomado-en-regimen-tributario-colombiano-teoria-y-practica-cursos-42412.html
+centro: Pontificia Universidad Javeriana - Educación Continuada
+
+titulo: Curso Preparación Examen de Certificación Internacional Project Management Professional (PMP)®
+imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
+link info: http://www.curso-en-colombia.com.co/curso-preparacion-examen-de-certificacion-internacional-project-management-professional-pmp-c2-ae-cursos-40715.html
+centro: Escuela Colombiana de Ingeniería Julio Garavito
+
+titulo: Diplomado para el Desarrollo del Ejecutivo de Alto Desempeño
+imagen: http://static1.curso-en-colombia.com.co/ext/logos/1989.png
+link info: http://www.curso-en-colombia.com.co/diplomado-para-el-desarrollo-del-ejecutivo-de-alto-desempeno-cursos-42753.html
+centro: Tecnológico de Monterrey Educación Continua en Línea
+
