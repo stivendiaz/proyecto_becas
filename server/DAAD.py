@@ -1,7 +1,16 @@
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
+#importamos pymongo para la conexion con mongodb
+import pymongo
+from pymongo import MongoClient
+#creamos la conexion
+client = MongoClient('localhost', 27017)
+db = client.test_database
+collection = db.test_collection
+
 my_url = 'http://www.curso-en-colombia.com.co/cursos'
+
 #openin up connection
 uClient= uReq(my_url)
 page_html = uClient.read()
@@ -15,8 +24,6 @@ containers = page_soup.findAll("div",{"class":"cursoDItem"})
 
 #creamos el archivo json
 
-filename = "becas.txt"
-f = open(filename, "w")
 i=0
 for container in containers:
     #buscamos el titulo de la beca
@@ -49,14 +56,12 @@ for container in containers:
 
     if modalidad == 'Presencial':
         lugar=array[1].span.a["title"]
-    
-
-
-    f.write("titulo: "+ title + "\n" + "imagen: " + image + "\n" + "link info: " + link_info + "\n" + "centro: "+centro_edu+ "\n"+"mas info: "+more_info +"\n"+"categoria: "+categoria+"\n"+"modalidad: "+modalidad+"\n"+"lugar "+lugar+"\n"+"\n")
+    #creamos el json para mandar a la bd
+    json = {"titulo": title ,"imagen":image,"link_info": link_info,"centro": centro_edu,"mas_info":more_info,"categoria":categoria,"modalidad":modalidad,"lugar":lugar}
+    #insertamos los archivos
+    post_id = collection.insert_one(json).inserted_id
 
 
     i+=1
     
-f.close()
-
 
