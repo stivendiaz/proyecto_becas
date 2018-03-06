@@ -1,9 +1,0 @@
-titulo: Diplomado de Aplicaciones Logísticas en Excel
-imagen: http://static5.curso-en-colombia.com.co/ext/logos/1388.jpg
-link info: http://www.curso-en-colombia.com.co/diplomado-aplicaciones-logisticas-en-excel-cursos-41716.html
-centro: Escuela Colombiana de Ingeniería Julio Garavito
-mas info: http://www.curso-en-colombia.com.co/diplomado-aplicaciones-logisticas-en-excel-cursos-41716.html#form
-categoria: Logística
-modalidad: Presencial
-lugar Bogotá
-
