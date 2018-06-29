@@ -7,11 +7,19 @@ class ScholarshipParser:
         self.schema = schema
 
     def parse(self):
-        return { 'title': self.getTitle() }
+        return { 'title': self.getTitle(), 'description' : self.getDescription(),'img':self.getImg()}
 
     def getTitle(self):
-        title = self.tree.find('a', { 'class': self.schema['title'] })
+        title = self.tree.select_one(self.schema['title'])
         return title.string
+
+    def getDescription(self):
+        description = self.tree.select_one(self.schema['description'])
+        return description.text
+    
+    def getImg(self):
+        img = self.tree.select_one(self.schema['img'])
+        return img['src']
 
 def getHtml(url):
     response = get(url)
@@ -21,7 +29,7 @@ def getParser(html):
     return soup(html, 'html.parser')
 
 def getScholarships(parser, schema):
-    return parser.findAll('div', { 'class': schema['discriminator'] })
+    return parser.select(schema['discriminator'])
 
 def scrap(schema):
     html = getHtml(schema['url'])
@@ -32,8 +40,10 @@ def scrap(schema):
 
 cursosEnColombia = {
     'url': 'http://www.curso-en-colombia.com.co/cursos',
-    'discriminator': 'cursoDItem',
-    'title': 'cursoDTitCurso'
+    'discriminator': 'div.cursoDItem',
+    'title': 'a.cursoDTitCurso',
+    'description' : 'div.cursoDDesc',
+    'img':'div > img',
 }
 
 scrap(cursosEnColombia)
