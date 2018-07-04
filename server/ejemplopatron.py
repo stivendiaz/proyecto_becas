@@ -7,7 +7,7 @@ class ScholarshipParser:
         self.schema = schema
 
     def parse(self):
-        return { 'title': self.getTitle(), 'description' : self.getDescription(),'img':self.getImg()}
+        return { 'title': self.getTitle(), 'description' : self.getDescription(),'img':self.getImg(),'mas_info':self.getMas_info()}
 
     def getTitle(self):
         title = self.tree.select_one(self.schema['title'])
@@ -20,6 +20,10 @@ class ScholarshipParser:
     def getImg(self):
         img = self.tree.select_one(self.schema['img'])
         return img['src']
+
+    def getMas_info(self):
+        link = self.tree.select_one(self.schema['mas_info'])
+        return link['href']
 
 def getHtml(url):
     response = get(url)
@@ -44,6 +48,19 @@ cursosEnColombia = {
     'title': 'a.cursoDTitCurso',
     'description' : 'div.cursoDDesc',
     'img':'div > img',
+    'mas_info':'div.largeCentro > a',
+    'additional':{
+    'url': 'http://www.curso-en-colombia.com.co/cursos',
+    'discriminator': 'div.cursoDItem'}
 }
 
+masoportunidades = {
+    'url': 'http://masoportunidades.org/category/becas/',
+    'discriminator': 'article.post',
+    'title': 'h2.entry-title > a',
+    'description' : 'div.entry-content > p',
+    'img':'a > img',
+    'mas_info' : 'h2.entry-title > a'
+}
 scrap(cursosEnColombia)
+scrap(masoportunidades)
