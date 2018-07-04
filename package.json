@@ -1,0 +1,27 @@
+{
+  "name": "proyecto_becas",
+  "version": "1.0.0",
+  "description": "Este es un proyecto para la obtencion y recoleccion de becas en internet",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "dependencies": {
+    "cron": "^1.3.0",
+    "express": "^4.16.3",
+    "mongo": "",
+    "python-shell": "^0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stivendiaz/proyecto_becas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stivendiaz/proyecto_becas/issues"
+  },
+  "homepage": "https://github.com/stivendiaz/proyecto_becas#readme"
+}
