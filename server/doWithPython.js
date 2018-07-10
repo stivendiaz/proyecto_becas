@@ -1,6 +1,6 @@
 
   var PythonShell = require('python-shell');
-  var pyshell = new PythonShell('ejemplopatron.py');
+  var pyshell = new PythonShell('ejemplowebdriver.py');
   
   pyshell.on('message', function (message) {
     // Recibe el mensaje recibido desde el script de python
