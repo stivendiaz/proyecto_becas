@@ -1,7 +1,7 @@
 from requests import get
 from bs4 import BeautifulSoup as soup
 
-class ScholarshipParser:
+class StepsParser:
     def __init__(self, tree, schema):
         self.tree = tree
         self.schema = schema
@@ -32,35 +32,19 @@ def getHtml(url):
 def getParser(html):
     return soup(html, 'html.parser')
 
-def getScholarships(parser, schema):
+def getSteps(parser, schema):
     return parser.select(schema['discriminator'])
 
 def scrap(schema):
     html = getHtml(schema['url'])
     parser = getParser(html)
-    for tree in getScholarships(parser, schema):
-        scholarshipParser = ScholarshipParser(tree, schema)
-        print(scholarshipParser.parse())
+    for tree in getSteps(parser, schema):
+        stepsParser = StepsParser(tree, schema)
+        print(stepsParser.parse())
 
 cursosEnColombia = {
-    'url': 'https://www.curso-en-colombia.com.co/postgrado',
-    'discriminator': 'div.cursoDItem',
-    'title': 'a.cursoDTitCurso',
-    'description' : 'div.cursoDDesc',
-    'img':'div > img',
-    'mas_info':'div.largeCentro > a',
-    'additional':{
-    'url': 'https://www.curso-en-colombia.com.co/postgrado',
-    'discriminator': 'div.cursoDItem'}
+    'url': 'https://www.icetex.gov.co/SIORI_WEB/Convocatorias.aspx?aplicacion=1&vigente=true',
+    'steps':{
+    'event': 'click',
+    'xpath': "//*[@id='RBLOpcionBuscar_2']"}
 }
-
-masoportunidades = {
-    'url': 'http://masoportunidades.org/category/becas/',
-    'discriminator': 'article.post',
-    'title': 'h2.entry-title > a',
-    'description' : 'div.entry-content > p',
-    'img':'a > img',
-    'mas_info' : 'h2.entry-title > a'
-}
-
-scrap(masoportunidades)
