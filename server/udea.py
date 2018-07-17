@@ -3,7 +3,7 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.implicitly_wait(40)
 driver.get("http://asone.udea.edu.co/movi/#/convocatorias")
-assert "Movilidad saliente" in driver.title
+assert "Movilidad" in driver.title
 time.sleep(5) 
 check = driver.find_element_by_xpath("//div/label/span[contains(text(), '¿Solo Becas?')]")
 driver.execute_script("arguments[0].click();", check)
