@@ -8,42 +8,45 @@ class Steps:
         self.schema = schema
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-                 
-    def test_page(self):
-        #URL viene del JSON        
-        self.driver.get(self.schema['url']) 
-        steps_schema = self.schema['steps']
+
+    def getSteps(self): 
+        return self.schema['steps']
+
+    def getTitle(self): 
+        return self.schema['title']
+    
+    def getCss(self, n): 
+        return self.schema['steps'][n]['css']
         
-        for n in steps_schema: 
-            #id viene del JSON para verificar que la página no sea 404
-            assert str(self.schema['steps'][n]['id']) in self.driver.title
-            #css selector se recupera del Json  
-            pasos = str(self.schema['steps'][n]['css'])
-            self.click_css(pasos)
+    def main_steps(self,steps): 
+        for n in steps: 
+            #css selector se recupera del Json
+            self.click_css(self.getCss(n))
 
     def click_css(self,selector):
         self.driver.find_element_by_css_selector(str(selector)).click()
-        time.sleep(10)
- 
+        time.sleep(3)
+
+    def test_page(self):
+        #URL viene del JSON        
+        self.driver.get(self.schema['url']) 
+        #title viene del JSON para verificar que la página no sea 404
+        assert str(self.getTitle()) in self.driver.title
+        self.main_steps(self.getSteps())
+
 icetex = {
     "url": "https://www.icetex.gov.co/SIORI_WEB/Convocatorias.aspx?aplicacion=1&vigente=true",
+    "title":"Convocatorias de Becas",
     "steps": {
         1: {
-            "id": "Convocatorias de Becas",
-            "event": "click",
-            "css": "#RBLOpcionBuscar_0"
-        },
-        2: {
-            "id": "Convocatorias de Becas",
-            "event": "click",
-            "css": "#RBLOpcionBuscar_1"
-        },
-        3: {
-            "id": "Convocatorias de Becas",
             "event": "click",
             "css": "#RBLOpcionBuscar_2"
         }
-    }
+    },
+    "links": {
+            "rows_css": "td:nth-child(1) > a",
+            "table_css": "td:nth-child(2) > a"
+    }      
 }
  
 step = Steps(icetex)
