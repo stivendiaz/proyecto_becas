@@ -55,7 +55,7 @@ cursosEnColombia = {
 }
 
 masoportunidades = {
-    'url': 'http://masoportunidades.org/category/becas/',
+    'url': 'http://masoportunidades.org/category/becas/page/2/',
     'discriminator': 'article.post',
     'title': 'h2.entry-title > a',
     'description' : 'div.entry-content > p',
