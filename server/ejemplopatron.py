@@ -43,14 +43,14 @@ def scrap(schema):
         print(scholarshipParser.parse())
 
 cursosEnColombia = {
-    'url': 'http://www.curso-en-colombia.com.co/cursos',
+    'url': 'https://www.curso-en-colombia.com.co/postgrado',
     'discriminator': 'div.cursoDItem',
     'title': 'a.cursoDTitCurso',
     'description' : 'div.cursoDDesc',
     'img':'div > img',
     'mas_info':'div.largeCentro > a',
     'additional':{
-    'url': 'http://www.curso-en-colombia.com.co/cursos',
+    'url': 'https://www.curso-en-colombia.com.co/postgrado',
     'discriminator': 'div.cursoDItem'}
 }
 
@@ -62,5 +62,5 @@ masoportunidades = {
     'img':'a > img',
     'mas_info' : 'h2.entry-title > a'
 }
-scrap(cursosEnColombia)
+
 scrap(masoportunidades)
